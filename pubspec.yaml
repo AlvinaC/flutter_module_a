@@ -1,0 +1,30 @@
+name: flutter_module_a
+description: A new Flutter module.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.15.0-178.0.dev <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  adaptive_navigation: ^0.0.3
+  collection: ^1.15.0
+  path_to_regexp: ^0.4.0
+  quiver: ^3.0.0
+  url_launcher: ^6.0.0
+  url_strategy: ^0.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+
+flutter:
+  uses-material-design: true
+  module:
+    androidX: true
+    androidPackage: com.jci.fluttermodule.flutter_module_a
+    iosBundleIdentifier: com.jci.fluttermodule.flutterModulea
