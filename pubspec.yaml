@@ -15,6 +15,8 @@ dependencies:
   quiver: ^3.0.0
   url_launcher: ^6.0.0
   url_strategy: ^0.2.0
+  flutter_module_b:
+        path: ./flutter_module_b
 
 dev_dependencies:
   flutter_test:

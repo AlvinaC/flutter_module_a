@@ -62,6 +62,7 @@ class _BookstoreState extends State<Bookstore> {
         '/books/popular',
         '/book/:bookId',
         '/author/:authorId',
+        '/moduleb',
       ],
       guard: guard,
       initialRoute: '/signin',

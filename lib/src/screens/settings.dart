@@ -55,6 +55,12 @@ class SettingsContent extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
+              RouteStateScope.of(context)!.go('/moduleb');
+            },
+            child: const Text('Go To Module B'),
+          ),
+          ElevatedButton(
+            onPressed: () {
               BookstoreAuthScope.of(context)!.signOut();
             },
             child: const Text('Sign out'),

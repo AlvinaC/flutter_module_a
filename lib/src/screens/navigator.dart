@@ -4,6 +4,7 @@
 
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_module_b/main.dart';
 
 import '../auth.dart';
 import '../data.dart';
@@ -34,6 +35,7 @@ class _BookstoreNavigatorState extends State<BookstoreNavigator> {
   final scaffoldKey = const ValueKey<String>('App scaffold');
   final bookDetailsKey = const ValueKey<String>('Book details screen');
   final authorDetailsKey = const ValueKey<String>('Author details screen');
+  final modulebKey = const ValueKey<String>('Module B screen');
 
   @override
   Widget build(BuildContext context) {
@@ -86,6 +88,11 @@ class _BookstoreNavigatorState extends State<BookstoreNavigator> {
               },
             ),
           )
+        else if (routeState.route.pathTemplate == '/moduleb')
+          MaterialPage<void>(
+            key: modulebKey,
+            child: MyApp(),
+          )
         else ...[
           // Display the app
           FadeTransitionPage<void>(
@@ -107,7 +114,7 @@ class _BookstoreNavigatorState extends State<BookstoreNavigator> {
               child: AuthorDetailsScreen(
                 author: selectedAuthor,
               ),
-            ),
+            )
         ],
       ],
     );
