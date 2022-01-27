@@ -1,3 +1,4 @@
 [submodule "flutter_module_b"]
 	path = flutter_module_b
 	url = https://github.com/AlvinaC/flutter_module_b.git
+    branch = origin/develop
